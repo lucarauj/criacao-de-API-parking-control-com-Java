@@ -27,32 +27,31 @@
 - DELETE
 <img width="800px" src="https://github.com/lucarauj/criacao-de-API-parking-control-com-Java/blob/main/images/DELETE.png"/>
 
-### ❌ Anotações utilizadas no projeto:
+### 📝 Anotações utilizadas no projeto:
 
-- @RestController
-- @GetMapping
-- @Entity
-- @Table
-- @Id
-- @GeneratedValue
-- @Column
-- @Repository
-- @Service
-- @RestController
-- @CrossOrigin
-- @NotBlank
-- @Size
-- @PostMapping
-- @RequestBody
-- @Valid
-- @Transactional
-- @PathVariable
-- @DeleteMapping
-- @PutMapping
-- @Configuration
-- @Bean
-- @Primary
-- @PageableDefault
+- @GetMapping: usada para mapear solicitações HTTP GET em métodos manipuladores específicos;
+- @Entity: utilizada para informar que uma classe também é uma entidade;
+- @Table: usada para especificar a tabela principal da entidade atualmente anotada;
+- @Id: especifica o identificador da entidade. Uma entidade deve sempre ter um atributo identificador, que é usado ao carregar a entidade em um determinado contexto de persistência;
+- @GeneratedValue (GenerationType.AUTO): deixa com o provedor de persistência a escolha da estratégia mais adequada de acordo com o banco de dados;
+- @Column: usada para especificar o mapeamento entre um atributo de entidade básico e a coluna da tabela de banco de dados;
+- @Repository: serve para definir uma classe como pertencente à camada de persistência;
+- @Service: marca uma classe Java que executa algum serviço;
+- @RestController: marca a classe como um controlador onde cada método retorna um objeto de domínio em vez de uma visão;
+- @CrossOrigin: ativa a comunicação entre domínios para os métodos manipuladores de solicitações;
+- @NotBlank: um atributo do tipo String não pode ser nulo e nem vazio;
+- @Size: confere se a quantidade de elementos está entre o mínimo e o máximo, suportando tipos como: Strings, Collections, Maps e arrays;
+- @PostMapping: usada para mapear solicitações HTTP POST em métodos específicos de manipulador;
+- @RequestBody: indica que o valor do objeto virá do corpo da requisição;
+- @Valid: indica que o valor do objeto virá do corpo da requisição;
+- @Transactional: utilizada nos métodos que precisam de transação;
+- @PathVariable: indica que o valor da variável virá de uma informação da rota;
+- @DeleteMapping: usada para mapear solicitações HTTP DELETE em métodos manipuladores específicos;
+- @PutMapping: usada para mapear solicitações HTTP PUT em métodos manipuladores específicos;
+- @Configuration: define uma classe como fonte de definições de beans;
+- @Bean: utilizada em métodos de uma classe, geralmente marcada com @Configuration, indicando ao Spring Framework que deve invocar aquele método e gerenciar o objeto retornado por ele;
+- @Primary: usada quando existem dois métodos anotados com @Bean que retornam o mesmo tipo de objeto, informando qual deles será injetado por padrão quando for solicitado;
+- @PageableDefault: permite que sejam informados parâmetros default de paginação e ordenação;
 
 ## 🚀 Tecnologias
 
