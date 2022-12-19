@@ -32,7 +32,7 @@
 - @GetMapping: usada para mapear solicitações HTTP GET em métodos manipuladores específicos;
 - @Entity: utilizada para informar que uma classe também é uma entidade;
 - @Table: usada para especificar a tabela principal da entidade atualmente anotada;
-- @Id: especifica o identificador da entidade. Uma entidade deve sempre ter um atributo identificador, que é usado ao carregar a entidade em um determinado contexto de persistência;
+- @Id: especifica o identificador da entidade, que é usado ao carregar a entidade em um determinado contexto de persistência;
 - @GeneratedValue (GenerationType.AUTO): deixa com o provedor de persistência a escolha da estratégia mais adequada de acordo com o banco de dados;
 - @Column: usada para especificar o mapeamento entre um atributo de entidade básico e a coluna da tabela de banco de dados;
 - @Repository: serve para definir uma classe como pertencente à camada de persistência;
